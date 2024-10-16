@@ -18,7 +18,8 @@ function getUsername() {
     return 'Kevin'
 }
 
-const username = getUsername()
+let username = getUsername()
+// game will change username later to taunt player
 console.log(`Welcome to GAME NAME, ${username}!`)
 
 //comical ready prompt loop
@@ -35,7 +36,7 @@ while (nonAnswers < 3) {
         console.log('You have to answer Y or N. I don\'t make the rules, I just enforce them.')
         nonAnswers++
     }
-};
+}
 
 if (nonAnswers == 3) {
     console.log(`You don't follow rules very well, ${username}. Here we go anyway!`)
